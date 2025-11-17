@@ -1,0 +1,85 @@
+.notifications-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  position: relative;
+}
+.notifications-container h1 {
+  text-align: center;
+  color: #800000;
+  margin-bottom: 20px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 2.5rem;
+    color: #aaa;
+    cursor: pointer;
+    line-height: 1;
+}
+.close-btn:hover {
+    color: #333;
+}
+
+/* NEW: Use grid to space out notification cards */
+.notifications-list {
+    display: grid;
+    gap: 15px;
+}
+
+.notification-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  position: relative;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.notification-delete-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #aaa;
+    cursor: pointer;
+    line-height: 1;
+}
+.notification-delete-btn:hover {
+    color: #333;
+}
+
+.notification-card p {
+  margin: 0 0 10px 0;
+  padding-right: 25px;
+}
+.notification-message {
+  font-style: italic;
+  color: #555;
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 4px;
+}
+.notification-contact {
+    font-weight: 500;
+}
+.notification-timestamp {
+  font-size: 0.8rem;
+  color: #999;
+  display: block;
+  text-align: right;
+  margin-top: 10px;
+}
+.no-notifications-message {
+  text-align: center;
+  color: #777;
+  padding: 40px 0;
+  background-color: #fff;
+  border-radius: 8px;
+}

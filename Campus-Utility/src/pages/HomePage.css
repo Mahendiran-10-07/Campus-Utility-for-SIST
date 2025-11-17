@@ -1,0 +1,174 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  /* UPDATED: Change 'contain' back to 'cover' */
+  background-size: cover;
+  background-position: center;
+}
+
+/* UPDATED: Added rounded bottom corners */
+.home-header {
+  width: 100%;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #6D0000, #9B0000);
+  color: white;
+  box-sizing: border-box;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  border-bottom-left-radius: 15px;  /* Curved bottom-left corner */
+  border-bottom-right-radius: 15px; /* Curved bottom-right corner */
+}
+
+.home-header h1 {
+  color: white;
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.home-main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+/* UPDATED: New, more vibrant gradient and shadow for the buttons */
+.nav-button {
+  color: white;
+  padding: 20px 80px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 12px;
+  background: linear-gradient(45deg, #c1121f, #780000); /* New red gradient */
+  border: none;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+  transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  background: linear-gradient(45deg, #780000, #c1121f);
+}
+
+/* UPDATED: Footer color now matches header, with curved top corners */
+.home-footer {
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  font-family: "serif", generic-family;
+  font-weight: bold;
+  /*background: linear-gradient(90deg, #f4f2f25e, #9B0000); /* Match header color */
+  color: white; /* Match header text color */
+  text-align: center;
+  border-top-left-radius: 15px;  /* Curved top-left corner */
+  border-top-right-radius: 15px; /* Curved top-right corner */
+}
+
+.user-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.action-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+.action-link1 {
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+.action-link1:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+}
+
+.action-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+}
+
+.notification-link {
+  position: relative;
+  font-size: 1.5rem;
+  border-radius: 50%;
+}
+
+.notification-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  border: 1px solid white;
+}
+
+.profile-container {
+  position: relative;
+}
+
+.profile-btn {
+  font-size: 1.6rem;
+  border-radius: 50%;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  width: 200px;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.dropdown-item {
+  padding: 12px 15px;
+  color: #333;
+  text-align: left;
+}
+
+.user-info {
+    border-bottom: 1px solid #eee;
+    line-height: 1.4;
+}
+
+.logout-btn {
+    width: 100%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.logout-btn:hover {
+    background-color: #f5f5f5;
+}

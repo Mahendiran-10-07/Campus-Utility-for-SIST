@@ -1,0 +1,52 @@
+.confirm-modal-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  text-align: center;
+  width: 90%;
+  max-width: 450px;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.confirm-modal-content h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.confirm-modal-content p {
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.confirm-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.modal-confirm-btn, .modal-cancel-btn {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.modal-cancel-btn {
+  background-color: #6c757d;
+  color: white;
+}
+.modal-cancel-btn:hover {
+    background-color: #5a6268;
+}
+
+.modal-confirm-btn {
+  background-color: #dc3545;
+  color: white;
+}
+.modal-confirm-btn:hover {
+    background-color: #c82333;
+}

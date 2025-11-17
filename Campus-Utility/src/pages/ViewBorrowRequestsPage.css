@@ -1,0 +1,174 @@
+.borrow-requests-page-container {
+  min-height: 100vh;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+}
+
+.borrow-requests-page-container h1 {
+  text-align: center;
+  color: rgb(188, 30, 30);
+  margin-bottom: 30px;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+.borrow-requests-list {
+  display: grid;
+  gap: 20px;
+  justify-content: center;
+
+  
+}
+.borrow-request-card {
+  
+position: relative;
+padding: 20px;
+padding-right: 33px;
+padding-left: 10;
+border-radius: 20px;
+background: rgba(72, 71, 71, 0.534);
+box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+border: 1px solid rgb(255, 255, 255);
+color: #ffffff;
+width: 900px;
+  
+}
+.borrow-request-card h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+ color: rgb(188, 30, 30);
+}
+.borrow-request-card p {
+  margin: 5px 0;
+}
+.borrow-card-actions {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+   justify-content: flex-end;
+  gap: 10px;
+}
+.action-btn {
+  /* UPDATED: Smaller padding and font size for all action buttons */
+
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  transition: background-color 0.2s;
+
+
+}
+.offer-to-lend-btn {
+
+  background-color: rgba(0, 123, 255, 0.7);
+margin-left: auto;
+  
+}
+.view-offers-btn {
+  background-color: rgba(23, 162, 184, 0.7);
+}
+.action-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.no-requests-message {
+  color: white;
+  text-align: center;
+  font-size: 1.1rem;
+  background-color: rgba(0,0,0,0.3);
+  padding: 20px;
+  border-radius: 8px;
+}
+.offer-form {
+    margin-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 15px;
+}
+.offer-form .form-group {
+    margin-bottom: 10px;
+}
+.offer-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.offer-form textarea, .offer-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0.2);
+    color: white;
+}
+.offer-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+}
+.offer-actions button {
+    padding: 8px 15px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+.offer-actions button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+}
+.offer-actions button[type="button"] {
+    background-color: #f1f1f1;
+    color: #333;
+}
+.form-group input::placeholder{
+  color: white;
+}
+.form-group  textarea::placeholder{
+  color: white;
+}
+
+
+
+/* NEW: Styles for admin's offer viewer */
+.admin-offers-viewer {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.admin-offers-viewer h3 {
+    margin-top: 0;
+    text-align: center;
+}
+.admin-offer-card {
+    background-color: rgba(0,0,0,0.2);
+    border-left: 4px solid #17a2b8;
+    padding: 15px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+.offer-message {
+    font-style: italic;
+}
+.offer-footer {
+    margin-top: 10px;
+    text-align: right;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+.close-offers-btn {
+    display: block;
+    margin: 15px auto 0 auto;
+    padding: 8px 20px;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

@@ -1,0 +1,126 @@
+.activity-log-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+.log-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+.log-header h1 {
+  color: #800000;
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+/* NEW: Styles for the main control bar */
+.filter-controls {
+    display: flex;
+    flex-direction: column; /* Stack search on top of date pickers */
+    gap: 15px;
+    margin-bottom: 25px;
+}
+.log-search-bar {
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+.date-picker-group {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    width: 100%;
+}
+.date-picker {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.date-picker label {
+    font-weight: bold;
+    color: #555;
+}
+.date-picker input {
+    padding: 9px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: inherit;
+}
+.delete-range-btn {
+    margin-left: auto; /* Pushes button to the far right */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #dc3545;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.delete-range-btn:hover {
+    background-color: #c82333;
+}
+
+/* Table and Pagination styles remain the same */
+.activity-log-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+.activity-log-table th, .activity-log-table td {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+.activity-log-table thead {
+  background-color: #f8f9fa;
+}
+.activity-log-table th {
+  font-weight: bold;
+  color: #333;
+}
+.activity-log-table tbody tr:hover {
+    background-color: #f2f2f2;
+}
+.log-action-login td:nth-child(2) {
+  color: #28a745;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.log-action-logout td:nth-child(2) {
+  color: #dc3545;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+.pagination button {
+    padding: 8px 15px;
+    border: 1px solid #ddd;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.pagination button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+.pagination span {
+    font-weight: bold;
+}
