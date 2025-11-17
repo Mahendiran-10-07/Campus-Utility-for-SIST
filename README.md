@@ -117,11 +117,13 @@ A secure, real-time web platform for the SIST campus community.
 <br>
 <br/>
 <br>
-🏗️ System Architecture
+🏗️ System Architecture<br>
+<br>
 
 
-
-![Architecture](./architecture.png)
+<p align="center">
+  <img src="./architecture.png" alt="System Architecture" width="550">
+</p>
 
 <br/>
 🔄 Workflow <br>
